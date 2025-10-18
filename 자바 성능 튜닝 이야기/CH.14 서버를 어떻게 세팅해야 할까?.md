@@ -39,8 +39,6 @@ MaxRequestsPerChild e
 - ThreadsPerChild: 프로세스당 스레드 수를 지정한다.
 - MaxRequestsPerChild: MaxRequestsPerChild와 같은 의미이다.
 - 프로세스 수(StartServers)가 2개이고, 프로세스당 스레드 수(ThreadPer Child)가 25이므로 기본적으로 50개의 요청을 처리할 수 있다.
-<br/>
-<br/>
 - 어떤 서비스가 초당 150명의 요청을 받고있다고 가정해 보자.
 - 자바는 GC를 할 때 JVM 자체가 멈춘다. 만약 이 GC가 2초 걸리면 어떻게 될까?
 - 아파치 웹 서버에 총 300명의 요청이 기다리게 될 것이다.

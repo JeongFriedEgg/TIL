@@ -95,8 +95,6 @@ class A {
 - 5️⃣ JNI의 표준 API인 JNICreateJavaVM를 사용하여 새로 생성한 non-primordial이라는 스레드에서 HotSpot VM을 생성한다.
 - 6️⃣ HotSpot VM이 생성되고 초기화되면, Main 클래스가 로딩된 런처에서는 main 메서드의 속성 정보를 읽는다.
 - 7️⃣ CallStaticVoidMethod는 네이티브 인터페이스를 불러 HotSpot VM에 있는 main 메서드가 수행된다.
-<br/>
-<br/>
 - 5️⃣에 있는 자바의 가상머신(VM)을 생성하는 JNI CreateJavaVM 단계
 - 1️⃣ JNI_CreateJavaVM는 동시에 두개의 스레드에서 호출할 수 없고, 오직 하나의 HotSpot VM 인스턴스가 프로세스 내에서 생성될 수 있도록 보장된다. HotSpot VM이 정적인 데이터구조를 생성하기 때문에 다시 초기화는 불가능하기 때문에, 오직 하나의 HotSpot VM이 프로세스에서 생성될 수 있다.
 - 2️⃣ JNI 버전이 호환성이 있는지 점검하고, GC 로깅을 위한 준비도 완료된다.
