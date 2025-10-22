@@ -12,7 +12,7 @@
 - JSP 페이지가 이미 컴파일되어 있고, 클래스가 로드되어 있고, JSP 파일이 변경되지 않았다면, 가장 많은 시간이 소요되는 2-4 프로세스는 생략된다.
 - 서블릿의 라이프 사이클
 
-![servlet-lifecycle.png](../image/servlet-lifecycle.png)
+![java-performance-tuning-ch11-1.png](../image/java-performance-tuning-ch11-1.png)
 
 - 서블릿은 JVM에 여러 객체로 생성되지 않는다.
 -  WAS가 시작하고, '사용 가능' 상태가 된 이상 대부분의 서블릿은 JVM에 살아있고, 여러 스레드에서 해당 서블릿의 `service()` 메서드를 호출하여 공유한다.

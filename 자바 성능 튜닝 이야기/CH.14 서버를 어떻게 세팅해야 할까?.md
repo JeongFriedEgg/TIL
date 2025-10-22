@@ -80,9 +80,10 @@ MaxRequestsPerChild e
 - 보통은 1~2개의 CPU당 하나의 인스턴스를 지정하는 것이 좋다고 이야기한다.
 - 하지만 장비 하나당 인스턴스 개수는 성능 테스트를 통해서 구하는 것이 가장 바람직하다.
 ## Session Timeout 시간 설정
-![session-timeout(1).png](../image/session-timeout%281%29.png)
+![java-performance-tuning-ch14-1.png](../image/java-performance-tuning-ch14-1.png)
 - 시간이 지남에 따라 세션의 개수가 증가했다가 감소했다가 하는 것을 볼 수 있다.
 - 점심시간이 다가오면서 세션의 개수가 감소하는 현상이 발생하고 있다. 가장 정상적인 상황이다.
-![session-timeout(2).png](../image/session-timeout%282%29.png)
+
+![java-performance-turning-ch14-2.png](../image/java-performance-turning-ch14-2.png)
 - 점심시간이 다가오는데도 세션 수가 계속 증가하고 있다.
 - 문제의 원인은 바로 세션종료시간이다. 정상적인 서버의 경우 세션종료시간을 4분으로 해놓은 반면, 이 서버는 5,256,000분으로 설정을 해 놓았기 때문이다.

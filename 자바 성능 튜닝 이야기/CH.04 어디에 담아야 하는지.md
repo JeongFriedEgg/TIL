@@ -1,6 +1,6 @@
 # CH.04 어디에 담아야 하는지...
 ## Collection 및 Map 인터페이스의 이해
-![java-collection.png](../image/java-collection.png)
+![java-performance-tuning-ch4-1.png](../image/java-performance-tuning-ch4-1.png)
 - Collection: 가장 상위 인터페이스이다.
 - Set: 중복을 허용하지 않는 집합을 처리하기 위한 인터페이스이다. 
 - SortedSet: 오름차순을 갖는 Set 인터페이스이다.
